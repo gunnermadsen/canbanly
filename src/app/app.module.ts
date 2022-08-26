@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EffectsModule } from '@ngrx/effects';
+import { HomeModule } from './modules/home/home.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EffectsModule } from '@ngrx/effects';
     AppRoutingModule,
     StoreModule.forRoot({}, {}),
     BrowserAnimationsModule,
-    EffectsModule.forRoot([])
+    EffectsModule.forRoot([]),
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
