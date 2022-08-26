@@ -1,5 +1,20 @@
-<div class="home">
-    <div class="">
-        test
+<div class="board">
+    <div class="board__main">
+        <card class="list oldlist" [card]="card" *ngFor="let card of (boardList$ | async)"></card>
+
+        <mat-card class="newlist list">
+            <button *ngIf="!isShowingListNameInput" mat-button color="accent" (click)="toggleNewListNameInput()">Create new list</button>
+            <div class="newlist__input" *ngIf="isShowingListNameInput">
+                <mat-form-field appearance="outline">
+                    <input matInput [formControl]="listNameControl" />
+                </mat-form-field>
+                <div class="newlist__input-controls">
+                    <button mat-raised-button color="accent" (click)="createNewList()">Save</button>
+                    <button mat-icon-button color="warm" (click)="toggleListNameInputControl()">
+                        <mat-icon>close</mat-icon>
+                    </button>
+                </div> 
+            </div>
+        </mat-card>
     </div>
 </div>

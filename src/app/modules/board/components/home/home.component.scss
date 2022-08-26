@@ -1,0 +1,26 @@
+.newlist {
+    
+
+    &__input-controls {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.board {
+    &__main {
+        display: flex;
+    }
+}
+
+.list {
+    width: 200px;
+}
+
+mat-card.newlist {
+    padding: 5px;
+}
+
+mat-card.oldlist {
+    align-self: flex-start;
+}
