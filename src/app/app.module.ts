@@ -7,6 +7,7 @@ import { StoreModule } from '@ngrx/store';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EffectsModule } from '@ngrx/effects';
 import { HomeModule } from './modules/home/home.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HomeModule } from './modules/home/home.module';
     StoreModule.forRoot({}, {}),
     BrowserAnimationsModule,
     EffectsModule.forRoot([]),
+    SharedModule,
     HomeModule
   ],
   providers: [],
