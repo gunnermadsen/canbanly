@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EffectsModule } from '@ngrx/effects';
-import { HomeModule } from './modules/home/home.module';
+import { HomeModule } from './modules/board/home.module';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
